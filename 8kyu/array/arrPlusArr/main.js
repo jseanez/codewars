@@ -1,6 +1,6 @@
-function arrayPlusArray(arr1, arr2) {
-  return arr1 + arr2; //something went wrong
-}
+// function arrayPlusArray(arr1, arr2) {
+//   return arr1 + arr2; //something went wrong
+// }
 // Parameters
 // I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
 // P.S. Each array includes only integer numbers. Output is a number too.
@@ -23,3 +23,8 @@ function arrayPlusArray(arr1, arr2) {
 // The reduce method can sum each array can return the sum as a single number and not an array. Then a simple + operator will return the 
 // sum of both arrays.
 
+function arrayPlusArray(arr1, arr2) {
+    let arr1Val = arr1.reduce((acc, cv) => acc + cv, 0);
+    let arr2Val = arr2.reduce((acc, cv) => acc + cv, 0);
+    return arr1Val + arr2Val
+}
