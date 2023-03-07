@@ -22,5 +22,5 @@
 // through the Math.floor(output), which will round it down to the nearest integer. And since the input is being divided by .036 if the
 // input is 0 it won't cause the function to break.
 function cockroachSpeed(s) {
-    //Good Luck!
+    return Math.floor(s / 0.036)
 }
