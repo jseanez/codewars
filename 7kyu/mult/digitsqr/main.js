@@ -9,7 +9,10 @@
 // Happy Coding!
 
 function squareDigits(num){
-    return 0;
+    let myArr = String(num).split("").map((num)=>{
+        return Number(num) * Number(num)
+      })
+    return Number(myArr.join(''));
 }
 
 
