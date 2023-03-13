@@ -1,6 +1,15 @@
 function highAndLow(numbers){
-  // ...
-}
+    let sortedArr = numbers.split(' ').sort((a,b)=> a - b);
+    let greatestVal = sortedArr.pop();
+    let leastVal = sortedArr.shift();
+    if(!greatestVal){
+      return leastVal + " " + leastVal;
+    }else if(!leastVal){
+      return greatestVal + " " + greatestVal;
+    }else{
+      return greatestVal + " " + leastVal;
+    }
+  }
 // In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 // Notes
 // All numbers are valid Int32, no need to validate them.
