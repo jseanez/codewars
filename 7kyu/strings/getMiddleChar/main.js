@@ -32,4 +32,12 @@
 
 // If the string has an even number of characters I can divide its length by 2 and subract 1 from that number to get the index of the middle 2 characters. Then using slice() I can take out the characters like this. .slice((str.length / 2) - 1, str.length / 2)
 
+function getMiddle(s)
+{
+  if(s.length % 2 != 0){
+    return s.charAt(Math.floor((s.length) / 2))
+  }else{
+    return s.slice(s.length / 2 - 1, s.length / 2 + 1)
+  }
+}
 
