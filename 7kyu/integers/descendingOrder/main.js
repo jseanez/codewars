@@ -23,3 +23,8 @@
 
 // Pseudo Code
 // Put the numbers into an array so I can use .sort() method on them and then reverse that array so it is descending. After this use .map(Number) on the array to return the sorted integers.
+function descendingOrder(n){
+    let arr = n.toString().split('').map(Number);
+    let srtArr = arr.sort().reverse();
+    return parseInt(srtArr.join(''));
+  }
