@@ -23,6 +23,20 @@
 
 // Pseudo Code
 // I want to sort all of the characters in the string into an array so I can loop through that array and check if any elements in that array are sitting next to the same element. This would mean that the word isn't an isogram if it contains multiple letters in the same word. 
+function isIsogram(str){
+    str = str.toLowerCase();
+         let len = str.length;
+   
+         let arr = str.split('');
+   
+         arr.sort();
+         for (let i = 0; i < len - 1; i++) {
+             if (arr[i] == arr[i + 1])
+                 return false;
+         }
+         return true;
+     }
+ 
 
 
  
