@@ -27,3 +27,16 @@
 
 // Pseudo Code
 // Turn the string into an array to use the .forEach() on the array to tally how many x and o are in the array then return true if num of x === num of o, and false if otherwise.
+function XO(str) {
+    let xCount = 0;
+    let oCount = 0;
+     for (let i = 0; i < str.length; i++) {
+    if (str[i].toLowerCase() === 'x') {
+      xCount++;
+    } else if (str[i].toLowerCase() === 'o') {
+      oCount++;
+    }
+}
+   return xCount === oCount;
+}
+  
