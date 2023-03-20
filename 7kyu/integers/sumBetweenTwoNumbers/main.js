@@ -27,4 +27,8 @@
 
 // Pseudo Code
 // First I will sort a and b. I will assign a to be the lowest number and b to be the highest number. After that I will check if they equal each other and return them if they do. If they don't equal each other I will make a loop from a to b that will add 1 to a and run until a = b, then I will return that value.
-
+const GetSum = (a, b) => {
+    let min = Math.min(a, b),
+        max = Math.max(a, b);
+    return (max - min + 1) * (min + max) / 2;
+  }
