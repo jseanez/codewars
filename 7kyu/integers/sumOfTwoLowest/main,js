@@ -1,0 +1,22 @@
+// function sumTwoSmallestNumbers(numbers) {  
+//   //Code here
+// }
+// Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+// For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+// [10, 343445353, 3453445, 3453545353453] should return 3453455.
+
+// Parameters
+// An array of at least 4 positive integers. No non positive numbers or floats.
+
+// Return
+// The sum of the 2 lowest numbers numerically in the array.
+
+
+// Example
+// [10, 343445353, 3453445, 3453545353453] should return 3453455.
+
+
+// Pseudo Code
+// Use the sort method to sort the array in ascending order. Then sum the 0th and 1st index of that sorted array and return it.
