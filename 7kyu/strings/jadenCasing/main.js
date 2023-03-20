@@ -18,3 +18,12 @@
 
 // Pseudo Code
 // Take the input string and split it into an array. Then target the first letter of each element in the array with toUpperCase. After that I will .join() the array into a string.
+String.prototype.toJadenCase = function () {
+    var str = this;
+    let arr = str.split(' ');
+    let casedArr = arr.map((e)=>{
+      return e.charAt(0).toUpperCase()+e.slice(1)
+    })
+    return casedArr.join(' ')
+  };
+  
