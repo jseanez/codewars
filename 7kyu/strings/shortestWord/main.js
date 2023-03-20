@@ -16,3 +16,11 @@
 
 // Pseudo Code
 // Put the length of each word into an array. Then sort the array using the .sort() method and returning the first number in the array and make sure to wrap Number() around it.
+function findShort(s){
+    let arr = s.split(' ');
+    let numArr = arr.map((e)=>{
+      return e.length
+    })
+    let sortedArr = numArr.sort((a, b)=> a - b)
+    return Number(sortedArr[0])
+}
