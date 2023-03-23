@@ -21,3 +21,6 @@
 // Pseudo Code
 // Return str.endsWith(ending) since it will return true if the first string ends with ending and false otherwise.
 
+function solution(str, ending){
+    return str.endsWith(ending);
+  }
