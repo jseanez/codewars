@@ -30,3 +30,18 @@
 
 // Pseudo Code
 // Turn the string into an array and iterate through that array swapping out complements. Then return the array turned into a string.
+function DNAStrand(dna){
+    let arr = dna.split('');
+    let convertedArr = arr.map((e)=>{
+      if(e==="A"){
+        return "T";
+      } else if(e==="T"){
+        return "A";
+      } else if(e==="C"){
+        return "G"
+      } else{
+        return "C"
+      }
+    })
+    return convertedArr.join('')
+  }
