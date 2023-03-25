@@ -20,3 +20,13 @@
 
 // Pseudo Code
 // I can use a for loop to loop through each number up to the input number. This will let me check each number below the input and see if it is a multiple of 3 or 5. I can create an empty array to store these numbers that are multiples of 3 or 5. Then I can use reduce to sum all of those numbers and return the answer
+
+function solution(number){
+    let answerArr = [];
+    for(let i = 0; i < number; i++){
+      if(i % 3 === 0 || i % 5 === 0){
+        answerArr.push(i);
+      }
+    }
+    return answerArr.reduce((acc, cv)=> acc + cv,0)
+}
