@@ -23,3 +23,11 @@
 
 // Pseudo Code
 // Add ( to the 0 index of the numbers array and ) to the 4th index of the numbers array. Add " " to the 5th index of the numbers array. Add - to the 9th index of the array. Then return the array as string with .join('')
+function createPhoneNumber(numbers){
+    numbers.splice(0,0,'(')
+    numbers.splice(4,0,')')
+    numbers.splice(5,0,' ')
+    numbers.splice(9,0,'-')
+    return numbers.join('')
+  }
+
