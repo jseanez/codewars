@@ -28,4 +28,15 @@
 
 // Pseudo Code
 // Create two variables that hold the short and long string. Then concatenate them correctly and return the single string.
+function solution(a, b){
+    let shortString, longString;
+    if(a.length > b.length){
+      shortString = b;
+      longString = a;
+    }else{
+      shortString = a;
+      longString = b;
+    }
+    return shortString + longString + shortString
+  }
   
