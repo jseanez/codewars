@@ -36,3 +36,12 @@
 
 // Pseudo Code
 // Loop through the string with a for loop that checks how many times str.charAt(i) is equal to letter. And everytime this is true I will add 1 to a count. At the end I will return the count. 
+function strCount(str, letter){  
+    let count = 0;
+    for(let i = 0; i<str.length; i++){
+      if(str.charAt(i) == letter){
+        count++
+      }
+    }
+    return count
+  }
