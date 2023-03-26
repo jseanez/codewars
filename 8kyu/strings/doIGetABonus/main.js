@@ -27,5 +27,9 @@
 
 // Pseudo Code
 // First I will check if the bonus boolean is true then create a ternary operator that either returns the salary * 10 with the prefix of £, or just the salary with the prefix of £. And in both ternary outcomes I must turn the salary from a number to a string and concatenate the £ to the start of the string.
+function bonusTime(salary, bonus) {
+    return bonus === true ? "£" + (10*salary).toString() : "£" + salary.toString();
+  }
+
     
     
