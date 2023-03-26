@@ -35,3 +35,11 @@
 
 // Pseudo Code
 // Since an empty string counts as true I will have to check for that. I can use a ternary to check if this === this.toUpperCase().
+
+String.prototype.isUpperCase = function() {
+    if(this === " "){
+      return true;
+    }else{
+      return this == this.toUpperCase() ? true : false;
+    }
+  }
