@@ -29,3 +29,7 @@
 
 // Pseudo Code
 // Use replaceAll to return the string with all 3 characters replaced.
+function correct(string)
+{
+  return string.replaceAll(0, "O").replaceAll(5, "S").replaceAll(1, "I")
+}
