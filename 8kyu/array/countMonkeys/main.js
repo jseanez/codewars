@@ -29,3 +29,10 @@
 
 // Pseudo Code
 // Declare an empty array, then loop through n and push numbers to that empty array until i = n.
+function monkeyCount(n) {
+    let monkeyArray = [];
+    for(let i = 1; i <= n; i++){
+      monkeyArray.push(i)
+    }
+    return monkeyArray
+  }
