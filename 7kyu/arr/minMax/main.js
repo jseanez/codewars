@@ -34,3 +34,11 @@
 
 // Pseudo Code
 // First check if arr.length = 1 then return an array of [arr[0], arr[0]]. After checking for that I will use the .sort method to sort the array from least to greatest and return [sortArr[0], sortedArr[sortedArr.length - 1]]. This isn't the most time effiecient way to solve this problem as it has a linear time complexity. 
+
+function minMax(arr){
+  if(arr.length == 1){
+    return [arr[0], arr[0]]
+  }
+  let sortedArr = arr.sort((a,b)=> a - b)
+  return [sortedArr[0], sortedArr[sortedArr.length - 1]]
+}
