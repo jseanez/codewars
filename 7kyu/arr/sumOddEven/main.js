@@ -46,3 +46,10 @@
 // Pseudo Code
 // First check if the arr is empty and return 'even' if that is the case. After checking for that I will use the reduce method to find the sum of the array and store it check if it is even or odd and return "even" or "odd using a ternary"
 
+function oddOrEven(array) {
+    if(array.length == 0){
+      return "even"
+    }
+   let sum = array.reduce((acc, cv)=> acc + cv,0) 
+   return sum % 2 == 0 ? "even" : "odd"
+ }
