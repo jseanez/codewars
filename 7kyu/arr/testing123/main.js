@@ -33,3 +33,6 @@
 
 // Pseudo Code
 // Use a map() function to modify each element and index in the array and use template literals to return the correct array. 
+var number=function(array){
+    return array.map((str, i) => `${i + 1}: ${str}`);
+  }
