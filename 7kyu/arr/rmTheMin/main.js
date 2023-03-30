@@ -36,3 +36,11 @@
 
 // Pseudo Code
 // First I want to know the value of the lowest element. This can be achieved with a Math.min() method on the original array with ..., After I know the value of the lowest number I can find its index with the indexOf(e=> e === lowestVal) which will return the index of the first occurance of that lowest value. Once I know the index of the lowest value I can use the slice method to slice the lowest index out of the array and attach the rest of the array to the end of the modified array. 
+function removeSmallest(numbers) {
+    let smallNum = Math.min(...numbers);
+    let rmvedNumIndex = numbers.findIndex(num => num === smallNum);
+    let newArr = [...numbers.slice(0, rmvedNumIndex), ...numbers.slice(rmvedNumIndex+1)];
+    numbers = newArr
+    return numbers
+  }
+  
