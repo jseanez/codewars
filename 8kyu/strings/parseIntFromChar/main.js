@@ -13,3 +13,6 @@
 
 // First I will take the first character out of the string with inputString[0], then I will wrap it in Number() to ensure that it will be a number, then I will return it.
 
+function getAge(inputString){
+    return Number(inputString[0])
+  }
